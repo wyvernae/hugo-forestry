@@ -1,6 +1,6 @@
 +++
 description = ""
 name = "Scallop Plate"
-price = 10.99
+price = 15.99
 
 +++
