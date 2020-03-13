@@ -16,9 +16,6 @@ fields:
     schema:
       format: markdown
   label: description
-- name: small_
-  type: boolean
-  label: small?
 - name: price
   type: number
   label: price_small
@@ -32,9 +29,6 @@ fields:
   showOnly:
     field: small_
     value: true
-- name: large_
-  type: boolean
-  label: large?
 - name: price_large
   type: number
   label: price_large
