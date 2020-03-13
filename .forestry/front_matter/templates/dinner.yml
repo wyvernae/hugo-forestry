@@ -19,6 +19,11 @@ fields:
 - name: group
   type: field_group_list
   fields:
+  - name: size
+    type: text
+    config:
+      required: false
+    label: size
   - name: price
     type: number
     label: price
@@ -29,11 +34,6 @@ fields:
       min: 
       max: 
       step: 
-  - name: size
-    type: text
-    config:
-      required: false
-    label: size
   config:
     min: 
     max: 
