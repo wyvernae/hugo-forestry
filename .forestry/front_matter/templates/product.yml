@@ -45,5 +45,3 @@ fields:
   type: tag_list
   default: []
   label: tag
-pages:
-- content/products/chicken.md
