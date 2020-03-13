@@ -16,11 +16,9 @@ fields:
     schema:
       format: markdown
   label: description
-- name: small
-  type: text
-  config:
-    required: false
-  label: small
+- name: small_
+  type: boolean
+  label: small?
 - name: price
   type: number
   label: price_small
@@ -31,11 +29,12 @@ fields:
     min: 
     max: 
     step: 
-- name: large
-  type: text
-  config:
-    required: false
-  label: large
+  showOnly:
+    field: small_
+    value: true
+- name: large_
+  type: boolean
+  label: large?
 - name: price_large
   type: number
   label: price_large
@@ -46,6 +45,9 @@ fields:
     min: 
     max: 
     step: 
+  showOnly:
+    field: large_
+    value: true
 pages:
 - content/dinner/Clam.md
 - content/dinner/chips.md
