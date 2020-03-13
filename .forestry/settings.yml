@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/dinnersmlg
+  label: dinnersmlg
+  create: all
+  match: "**/*"
+  templates:
+  - dinnerlgsm
+- type: directory
   path: content/dinner
   label: dinner
   create: all
