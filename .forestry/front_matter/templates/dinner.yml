@@ -5,8 +5,13 @@ fields:
 - name: name
   type: text
   config:
-    required: false
+    required: true
   label: name
+- name: small
+  type: text
+  config:
+    required: false
+  label: small
 - name: price
   type: number
   label: price_small
@@ -17,6 +22,11 @@ fields:
     min: 
     max: 
     step: 
+- name: large
+  type: text
+  config:
+    required: false
+  label: large
 - name: price_large
   type: number
   label: price_large
