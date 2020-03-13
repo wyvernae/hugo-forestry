@@ -16,26 +16,29 @@ fields:
     schema:
       format: markdown
   label: description
-- name: price_small
-  type: number
-  label: price_small
-  description: ''
-  default: 0
-  required: true
+- name: group
+  type: field_group_list
+  fields:
+  - name: price
+    type: number
+    label: price
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: size
+    type: text
+    config:
+      required: false
+    label: size
   config:
     min: 
     max: 
-    step: 
-- name: price_large
-  type: number
-  label: price_large
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
+    labelField: 
+  label: group
 pages:
 - content/dinner/Clam.md
 - content/dinner/adada.md
