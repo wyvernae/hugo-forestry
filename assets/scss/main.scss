@@ -22,30 +22,50 @@
 
 html,
 body {
+  background-color: #f6f6f6;
   min-height: 100vh;
   padding: 0;
   margin: 0;
 }
 
+
 body {
-  @include smallerThanDesktop {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
+  // @include smallerThanDesktop {
+  //   padding-right: 20px;
+  //   padding-left: 20px;
+  // }
+
 
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
+.tabs {
+  @media (max-width: 483px) {
+    width: 100vw;
+  }
+}
+
 main {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.menHeading {
+  text-align: center;
+  font-size: 2em;
+
+  @media (max-width: 483px) {
+    font-size: 1.5em;
+  }
+}
+
 .foodContent {
+  justify-content: center;
   display: flex;
-  ;
+  flex-wrap: wrap;
 }
 
 .background-image {

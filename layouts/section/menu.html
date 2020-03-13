@@ -8,7 +8,7 @@
     <h2>Cheese</h2>
     <p>An exclusive <strong>collection of handcrafted cheese</strong> for the hardcore cheese enthusiasts.</p>
   </div> -->
-  <div class="uk-width-3-4">
+  <div class="uk-width-3-4 tabs">
     <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
       <li><a href="">Dinner</a></li>
       <li><a href="">Salads</a></li>
@@ -25,14 +25,25 @@
       <li><a href="">Jo Jo's Potatoes</a></li>
       <li><a href="">Potato Skins</a></li>
     </ul>
-    <ul id="my-id" class="uk-switcher uk-margin">
-      <li class="foodContent">
+    <ul id="my-id" class="uk-switcher uk-margin ">
+      <li class="foodContent uk-animation-fade">
+        <h1 class="menHeading">All served with Mashed Potatoes with gravy French Fries, Cole Slaw & a
+          roll.</h1>
         {{ range where .Site.RegularPages "Section" "dinner"}}
         {{ partial "fooditem.html" .Params }}
         {{ end }}
+        {{ range where .Site.RegularPages "Section" "dinnersmlg"}}
+        {{ partial "fooditem2price.html" .Params }}
+        {{ end }}
 
       </li>
-      <li class="foodContent">Content 2</li>
+      <li class="foodContent uk-animation-fade">
+        <h1 class="menHeading">Available Dressings: Italian, Lite Italian, Blue Cheese, Ranch, Thousand Island, Caesar,
+          Greek, Honey Mustard. Add Feta to any Salad for 99¢</h1>
+        {{ range where .Site.RegularPages "Section" "salad"}}
+        {{ partial "fooditem.html" .Params }}
+        {{end}}
+      </li>
       <li class="foodContent">Content 3</li>
     </ul>
   </div>

@@ -7,6 +7,28 @@
   margin-left: auto;
   margin-right: auto;
 
+  .sideNav {
+    margin-top: 2em;
+    padding: 0;
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin-top: 1.5em;
+    }
+
+    a {
+      font-size: 2em;
+      text-decoration: none;
+      line-height: normal;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  }
+
   &__branding {
     display: flex;
     justify-content: center;
@@ -15,10 +37,15 @@
     color: $color-black;
     text-decoration: none;
   }
-  
+
   &__logo {
     height: 100px;
     margin-right: 15px;
+
+    @media (max-width: 483px) {
+      margin-left: 2em;
+    }
+
   }
 
   &__title {
@@ -26,26 +53,79 @@
     font-size: 24px;
   }
 
-  .menu{
-    
+  .nav {
+    position: absolute;
+    font-size: 3em;
+    right: 5%;
+    height: 100px;
+    width: 100px;
+
+    @media (min-width: 483px) {
+      display: none;
+    }
+  }
+
+  .menu {
     margin-left: 45%;
-  ul{
-  display: flex;
-  justify-content: end;
-  list-style: none; 
-li{
-  margin: 0px 10px;
-}
-a{
-  font-size: 1.5em;
-  color: black;
-} }
-}
-  
-  
+
+    @media (max-width: 768px) {
+      margin-left: 0%;
+    }
+
+    @media (max-width: 878px) {
+      margin-left: 30%;
+    }
+
+    @media (max-width: 690px) {
+      margin-left: 25%;
+    }
+
+    @media (max-width: 644px) {
+      margin-left: 20%;
+    }
+
+    @media (max-width: 604px) {
+      margin-left: 15%;
+    }
+
+    @media (max-width: 568px) {
+      margin-left: 10%;
+    }
+
+    @media (max-width: 537px) {
+      margin-left: 5%;
+    }
+
+    @media (max-width: 507px) {
+      margin-left: 0%;
+    }
+
+    @media (max-width: 483px) {
+      display: none;
+    }
+
+    ul {
+
+      display: flex;
+      justify-content: end;
+      list-style: none;
+
+      li {
+        margin: 0px 10px;
+      }
+
+      a {
+        font-size: 1.5em;
+        color: black;
+      }
+    }
+  }
+
+
 
   &__cart {
     margin-left: auto;
+
     .snipcart-summary {
       display: flex;
       justify-content: center;

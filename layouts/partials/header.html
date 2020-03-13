@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,44 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit-icons.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   <script src=""></script>
   <title>Chicken'n'Chips</title>
 </head>
+
 <body>
   <header class="header">
     <a class="header__branding" href="/">
-      <img class="header__logo" src="/images/icons/11559610.png" alt="cheese logo"> 
+      <img class="header__logo" src="/images/icons/11559610.png" alt="cheese logo">
     </a>
-  <div class="menu">
-    <ul>
-      <li><a href="/menu">Menu</a></li>
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/contact">Contact </a></li>
-    </ul>
-  </div>
+    <div class="nav">
+      <a class="uk-navbar-toggle nav" uk-navbar-toggle-icon href="" uk-toggle="target: #my-id"></a>
+    </div> <!-- This is an anchor toggling the off-canvas -->
+    <a href="#my-id" uk-toggle></a>
+
+    <!-- This is the off-canvas -->
+    <div id="my-id" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <ul class="sideNav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact </a></li>
+        </ul>
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      </div>
+    </div>
+    <div class="menu">
+
+      <ul>
+
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact </a></li>
+      </ul>
+    </div>
   </header>
