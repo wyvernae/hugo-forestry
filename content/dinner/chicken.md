@@ -1,5 +1,5 @@
 +++
-description = "chicne"
+description = ""
 id = "CHICKEN"
 image = "/uploads/11560054.jpg"
 large = "large"
