@@ -16,6 +16,16 @@ fields:
     schema:
       format: markdown
   label: description
+- name: price
+  type: number
+  label: price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - content/dinner/Clam.md
 - content/dinner/adada.md
