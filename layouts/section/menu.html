@@ -30,6 +30,7 @@
         {{ range where .Site.RegularPages "Section" "dinner" }}
         {{ partial "fooditem.html" .Params }}
         {{ end }}
+
       </li>
       <li class="foodContent">Content 2</li>
       <li class="foodContent">Content 3</li>
