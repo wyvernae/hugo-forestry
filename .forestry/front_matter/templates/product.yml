@@ -41,5 +41,9 @@ fields:
   config:
     required: false
   label: product_url
+- name: tag
+  type: tag_list
+  default: []
+  label: tag
 pages:
 - content/products/chicken.md
