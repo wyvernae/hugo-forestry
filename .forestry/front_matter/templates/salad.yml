@@ -26,3 +26,5 @@ fields:
     max: 
     step: 
   label: Price
+pages:
+- content/salad/Chick Stix Salad or Caesar.md
