@@ -22,8 +22,15 @@
       <li>Content 3</li>
     </ul>
   </div>
+  <h2>Tags:</h2>
+  <ul>
+    {{ range where .Site.RegularPages "Section" "products"  }}
 
-  {{ range where .Site.RegularPages "Section" "products"}}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+
+  {{ range where .Site.RegularPages "Section" "products" }}
   {{ partial "product.html" .Params }}
   {{ end }}
 
