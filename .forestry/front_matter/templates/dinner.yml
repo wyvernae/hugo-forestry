@@ -16,7 +16,7 @@ fields:
     schema:
       format: markdown
   label: description
-- name: price
+- name: price_small
   type: number
   label: price_small
   description: ''
@@ -26,9 +26,6 @@ fields:
     min: 
     max: 
     step: 
-  showOnly:
-    field: small_
-    value: true
 - name: price_large
   type: number
   label: price_large
@@ -39,9 +36,6 @@ fields:
     min: 
     max: 
     step: 
-  showOnly:
-    field: large_
-    value: true
 pages:
 - content/dinner/Clam.md
 - content/dinner/cha.md
