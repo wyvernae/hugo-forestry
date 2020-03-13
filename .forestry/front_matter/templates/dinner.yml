@@ -50,4 +50,5 @@ fields:
     value: true
 pages:
 - content/dinner/Clam.md
+- content/dinner/cha.md
 - content/dinner/chips.md
