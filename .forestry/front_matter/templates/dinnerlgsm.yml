@@ -36,3 +36,5 @@ fields:
     min: 
     max: 
     step: 
+pages:
+- content/dinnersmlg/boneOnChicken.md
