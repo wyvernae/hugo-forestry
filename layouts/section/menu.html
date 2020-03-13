@@ -16,19 +16,16 @@
     </ul>
     <ul id="my-id" class="uk-switcher uk-margin">
       <li><a href="#" id="autoplayer" data-uk-switcher-item="next"></a>
-        <h1>Chicken</h1>
+        {{ range where .Site.RegularPages "Section" "dinner" }}
+        {{ partial "fooditem.html" .Params }}
+        {{ end }}
+
       </li>
       <li>Content 2</li>
       <li>Content 3</li>
     </ul>
   </div>
-  <h2>Tags:</h2>
-  <ul>
-    {{ range where .Site.RegularPages "Section" "products"  }}
 
-    <li>{{ . }}</li>
-    {{ end }}
-  </ul>
 
   {{ range where .Site.RegularPages "Section" "products" }}
   {{ partial "product.html" .Params }}
