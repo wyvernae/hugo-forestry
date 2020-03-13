@@ -7,6 +7,15 @@ fields:
   config:
     required: true
   label: name
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description
 - name: small
   type: text
   config:
