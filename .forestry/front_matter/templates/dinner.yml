@@ -47,4 +47,5 @@ fields:
     max: 
     step: 
 pages:
+- content/dinner/Clam.md
 - content/dinner/chips.md
