@@ -27,7 +27,7 @@
     </ul>
     <ul id="my-id" class="uk-switcher uk-margin">
       <li class="foodContent">
-        {{ range where .Site.RegularPages "Section" "dinner" }}
+        {{ range where .Site.RegularPages "Section" "dinner"}}
         {{ partial "fooditem.html" .Params }}
         {{ end }}
 
