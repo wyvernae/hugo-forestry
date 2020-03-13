@@ -1,35 +1,45 @@
 {{ partial "header.html" . }}
 
 <!-- {{ $products := getJSON "/data/products.json" }} -->
-<main class="products">
-  <img src="/images/icons/cheese-background.svg" alt="" class="background-image">
+<main>
+  <!-- <img src="/images/icons/cheese-background.svg" alt="" class="background-image">
   <div class="promotional-message">
     <h3>sda</h3>
     <h2>Cheese</h2>
     <p>An exclusive <strong>collection of handcrafted cheese</strong> for the hardcore cheese enthusiasts.</p>
-  </div>
-  <div class="uk-width-1-1">
+  </div> -->
+  <div class="uk-width-3-4">
     <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
-      <li><a href="">Tab 1</a></li>
-      <li><a href="">Tab 2</a></li>
-      <li><a href="">Tab 3</a></li>
+      <li><a href="">Dinner</a></li>
+      <li><a href="">Salads</a></li>
+      <li><a href="">Chicken</a></li>
+      <li><a href="">Bulkie Sandwiches</a></li>
+      <li><a href="">Bucket Chicken</a></li>
+      <li><a href="">Family Meals</a></li>
+      <li><a href="">Fresh Wings</a></li>
+      <li><a href="">From the Grill</a></li>
+      <li><a href="">Chick Stix</a></li>
+      <li><a href="">Sides</a></li>
+      <li><a href="">Desserts</a></li>
+      <li><a href="">Kids Meals</a></li>
+      <li><a href="">Jo Jo's Potatoes</a></li>
+      <li><a href="">Potato Skins</a></li>
     </ul>
     <ul id="my-id" class="uk-switcher uk-margin">
-      <li><a href="#" id="autoplayer" data-uk-switcher-item="next"></a>
+      <li class="foodContent">
         {{ range where .Site.RegularPages "Section" "dinner" }}
         {{ partial "fooditem.html" .Params }}
         {{ end }}
-
       </li>
-      <li>Content 2</li>
-      <li>Content 3</li>
+      <li class="foodContent">Content 2</li>
+      <li class="foodContent">Content 3</li>
     </ul>
   </div>
 
-
+  <!-- 
   {{ range where .Site.RegularPages "Section" "products" }}
   {{ partial "product.html" .Params }}
-  {{ end }}
+  {{ end }} -->
 
 </main>
 
