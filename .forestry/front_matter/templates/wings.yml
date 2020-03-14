@@ -18,8 +18,8 @@ fields:
     max: 
     step: 
 pages:
-- content/wings/18p.md
 - content/wings/24p.md
 - content/wings/36p.md
 - content/wings/a.md
 - content/wings/b.md
+- content/wings/c.md
