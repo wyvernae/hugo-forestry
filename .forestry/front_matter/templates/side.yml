@@ -18,4 +18,5 @@ fields:
     max: 
     step: 
 pages:
+- content/Side/Orings.md
 - content/Side/ffries.md
