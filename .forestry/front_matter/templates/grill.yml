@@ -27,4 +27,5 @@ fields:
     max: 
     step: 
 pages:
+- content/grill/ClassicCheese.md
 - content/grill/Steak Tip Dinner.md
