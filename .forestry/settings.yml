@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/grill
+  label: Grill
+  create: all
+  match: "**/*"
+  templates:
+  - grill
+- type: directory
   path: content/salad
   label: Salad
   create: all
