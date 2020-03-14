@@ -5,20 +5,6 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/wings
-  label: Wings
-  create: all
-  match: "**/*"
-  templates:
-  - wings
-- type: directory
-  path: content/Family Meals
-  label: Family Meals
-  create: all
-  match: "**/*"
-  templates:
-  - family-meals
-- type: directory
   path: content/grill
   label: Grill
   create: all
@@ -55,6 +41,34 @@ sections:
   - product
 - type: heading
   label: All Things Chicken
+- type: directory
+  path: content/wings
+  label: Wings
+  create: all
+  match: "**/*"
+  templates:
+  - wings
+- type: directory
+  path: content/Family Meals
+  label: Family Meals
+  create: all
+  match: "**/*"
+  templates:
+  - family-meals
+- type: directory
+  path: content/chick stix
+  label: Chick Stix
+  create: all
+  match: "**/*"
+  templates:
+  - chick-stix
+- type: directory
+  path: content/bone-in-bucket
+  label: Bone-In-Bucket
+  create: all
+  match: "**/*"
+  templates:
+  - bone-in-bucket
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
