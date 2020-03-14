@@ -18,4 +18,5 @@ fields:
     max: 
     step: 
 pages:
+- content/wings/12p.md
 - content/wings/8p.md
