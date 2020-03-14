@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/Family Meals
+  label: Family Meals
+  create: all
+  match: "**/*"
+  templates:
+  - family-meals
+- type: directory
   path: content/grill
   label: Grill
   create: all
@@ -39,6 +46,8 @@ sections:
   match: "**/*"
   templates:
   - product
+- type: heading
+  label: All Things Chicken
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
