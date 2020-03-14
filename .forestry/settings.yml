@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/wings
+  label: Wings
+  create: all
+  match: "**/*"
+  templates:
+  - wings
+- type: directory
   path: content/Family Meals
   label: Family Meals
   create: all
