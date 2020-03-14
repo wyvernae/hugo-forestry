@@ -9,33 +9,33 @@
     <p>An exclusive <strong>collection of handcrafted cheese</strong> for the hardcore cheese enthusiasts.</p>
   </div> -->
   <div class="uk-width-3-4 tabs">
-    <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+    <ul class="uk-tab tabs2" data-uk-tab="{connect:'#my-id'}">
       <li><a href="">Dinner</a></li>
       <li><a href="">Salads</a></li>
-      <li><a href="">Chicken</a></li>
+      <li><a href="">All Things Chicken</a></li>
       <li><a href="">Bulkie Sandwiches</a></li>
-      <li><a href="">Bucket Chicken</a></li>
-      <li><a href="">Family Meals</a></li>
-      <li><a href="">Fresh Wings</a></li>
-      <li><a href="">From the Grill</a></li>
-      <li><a href="">Chick Stix</a></li>
       <li><a href="">Sides</a></li>
       <li><a href="">Desserts</a></li>
       <li><a href="">Kids Meals</a></li>
-      <li><a href="">Jo Jo's Potatoes</a></li>
-      <li><a href="">Potato Skins</a></li>
     </ul>
     <ul id="my-id" class="uk-switcher uk-margin ">
       <li class="foodContent uk-animation-fade">
         <h1 class="menHeading">All served with Mashed Potatoes with gravy French Fries, Cole Slaw & a
           roll.</h1>
-        {{ range where .Site.RegularPages "Section" "dinner"}}
-        {{ partial "fooditem.html" .Params }}
-        {{ end }}
-        {{ range where .Site.RegularPages "Section" "dinnersmlg"}}
-        {{ partial "fooditem2price.html" .Params }}
-        {{ end }}
-
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "dinner"}}
+          {{ partial "fooditem.html" .Params }}
+          {{ end }}
+          {{ range where .Site.RegularPages "Section" "dinnersmlg"}}
+          {{ partial "fooditem2price.html" .Params }}
+          {{ end }}
+        </div>
+        <h2 class="menHeading">From the Grill</h2>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "grill"}}
+          {{ partial "fooditem.html" .Params }}
+          {{ end }}
+        </div>
       </li>
       <li class="foodContent uk-animation-fade">
         <h1 class="menHeading">Available Dressings: Italian, Lite Italian, Blue Cheese, Ranch, Thousand Island, Caesar,
@@ -44,7 +44,58 @@
         {{ partial "fooditem.html" .Params }}
         {{end}}
       </li>
-      <li class="foodContent">Content 3</li>
+      <li class="foodContent">
+        <h1 class="menHeading">Fresh Wings</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "wings"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <h1 class="menHeading">Family Meals</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "Family Meals"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <h1 class="menHeading">Chick Stix®</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "chick stix"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <h1 class="menHeading">Bone-in-Buckets</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "bone-in-bucket"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+      </li>
+      <li>bulkie</li>
+      <li class="foodContent">
+        <h1 class="menHeading">Sides</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "Side"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "SideLGSM"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <h1 class="menHeading">Jo Jo's Potatoes</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "Jojos"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <h1 class="menHeading">Potato Skins with Bacon & Cheddar</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "pskins"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+      </li>
     </ul>
   </div>
 

@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 
@@ -41,8 +42,23 @@ body {
 }
 
 .tabs {
-  @media (max-width: 483px) {
+
+  @media (max-width: 1271px) {
     width: 100vw;
+  }
+
+  .tabs2 {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 563px) {
+      justify-content: space-evenly;
+    }
+
+    li a {
+      font-size: 1em;
+      // color: rgb(150, 23, 23);
+    }
   }
 }
 
@@ -56,6 +72,11 @@ main {
 .menHeading {
   text-align: center;
   font-size: 2em;
+  padding-left: .5em;
+  color: rgb(150, 23, 23);
+  padding-right: .5em;
+  font-family: 'Lobster',
+    cursive;
 
   @media (max-width: 483px) {
     font-size: 1.5em;
