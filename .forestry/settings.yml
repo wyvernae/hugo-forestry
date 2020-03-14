@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/pskins
+  label: Pskins Bacon Cheddar
+  create: all
+  match: "**/*"
+  templates:
+  - potato-skins-with-bacon-cheddar
+- type: directory
   path: content/grill
   label: Grill
   create: all
@@ -39,6 +46,29 @@ sections:
   match: "**/*"
   templates:
   - product
+- type: heading
+  label: Sides
+- type: directory
+  path: content/Jojos
+  label: Jojos
+  create: all
+  match: "**/*"
+  templates:
+  - jojos
+- type: directory
+  path: content/Side
+  label: Side
+  create: all
+  match: "**/*"
+  templates:
+  - side
+- type: directory
+  path: content/SideLGSM
+  label: sidelgsm
+  create: all
+  match: "**/*"
+  templates:
+  - sidelgsm
 - type: heading
   label: All Things Chicken
 - type: directory
