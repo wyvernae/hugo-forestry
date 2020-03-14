@@ -18,6 +18,7 @@ fields:
     max: 
     step: 
 pages:
+- content/Side/MozzStick.md
 - content/Side/Orings.md
 - content/Side/clams.md
 - content/Side/ffries.md
