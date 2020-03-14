@@ -19,5 +19,6 @@ fields:
     step: 
 pages:
 - content/Side/Orings.md
+- content/Side/clams.md
 - content/Side/ffries.md
 - content/Side/haddock.md
