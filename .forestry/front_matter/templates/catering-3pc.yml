@@ -16,7 +16,7 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: 3pc_price
+- name: 3pcprice
   type: number
   description: ''
   default: 0
@@ -26,7 +26,7 @@ fields:
     max: 
     step: 
   label: 50Pc Price
-- name: 80pc_price
+- name: 80pcprice
   type: number
   description: ''
   default: 0
@@ -36,7 +36,7 @@ fields:
     max: 
     step: 
   label: 80Pc Price
-- name: 100pc_price
+- name: 100pcprice
   type: number
   label: 100Pc Price
   description: ''
