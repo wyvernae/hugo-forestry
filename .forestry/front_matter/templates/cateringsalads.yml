@@ -28,5 +28,6 @@ fields:
     max: 
     step: 
 pages:
+- content/cateringSalads/Caesar.md
 - content/cateringSalads/Garden.md
 - content/cateringSalads/Greek.md
