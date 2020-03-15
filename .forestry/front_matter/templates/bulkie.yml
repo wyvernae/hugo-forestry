@@ -27,5 +27,6 @@ fields:
     max: 
     step: 
 pages:
+- content/bulkie/BBQBULKIE.md
 - content/bulkie/BBQChicken.md
 - content/bulkie/crispchicken.md
