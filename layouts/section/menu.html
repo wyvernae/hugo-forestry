@@ -46,8 +46,10 @@
         {{ partial "fooditem.html" .Params }}
         {{end}}
       </li>
-      <li class="foodContent">
+      <li>
         <h1 class="menHeading">Fresh Wings</h1>
+        <h2 class="subHeading">Flavors: Plain | Buffalo | BBQ | Teriyaki | Sweet Heat | Garlic Parmesan | Lemon
+          Pepper | Ranch Alita | Honey Mustard </h2>
         <div class="foodContent">
           {{ range where .Site.RegularPages "Section" "wings"}}
           {{ partial "fooditem.html" .Params }}
@@ -60,6 +62,7 @@
           {{end}}
         </div>
         <h1 class="menHeading">Chick Stix®</h1>
+        <h2 class="subHeading">Plain or Buffalo</h2>
         <div class="foodContent">
           {{ range where .Site.RegularPages "Section" "chick stix"}}
           {{ partial "fooditem.html" .Params }}
