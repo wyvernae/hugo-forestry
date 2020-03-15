@@ -6,9 +6,9 @@
 80pc_price = "37"
 80pcprice = "60"
 description = "A tray of tasty roasted JoJo potatoes"
-lgpcprice = 30
-medpcprice = 30
+lgpcprice = 44
+medpcprice = 37
 name = "JoJo Tray"
-smallpcprice = 30
+smallpcprice = 25
 
 +++
