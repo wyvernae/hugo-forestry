@@ -18,4 +18,5 @@ fields:
     max: 
     step: 
 pages:
+- content/kids/kBurger.md
 - content/kids/kChick.md
