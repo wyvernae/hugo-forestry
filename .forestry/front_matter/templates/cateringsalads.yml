@@ -29,5 +29,6 @@ fields:
     step: 
 pages:
 - content/cateringSalads/Caesar.md
+- content/cateringSalads/ChickenCaesar.md
 - content/cateringSalads/Garden.md
 - content/cateringSalads/Greek.md
