@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/cateringSalads
+  label: Catering Salads
+  create: all
+  match: "**/*"
+  templates:
+  - cateringsalads
+- type: directory
   path: content/cat3pc
   label: Catering 3Pc
   create: all
