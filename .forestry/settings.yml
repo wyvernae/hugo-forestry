@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Catering
 - type: directory
   path: content/cateringSalads
   label: Catering Salads
@@ -18,6 +20,8 @@ sections:
   match: "**/*"
   templates:
   - catering-3pc
+- type: heading
+  label: General
 - type: directory
   path: content/kids
   label: Kids Meals
