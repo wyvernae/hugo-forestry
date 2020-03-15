@@ -30,8 +30,12 @@
 
         display: flex;
         justify-content: center;
-        // justify-content: space-around;
 
+        // justify-content: space-around;
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #D5572D;
+        }
     }
 
     .price {
