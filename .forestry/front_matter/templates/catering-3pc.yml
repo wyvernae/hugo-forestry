@@ -16,7 +16,7 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: 3pcprice
+- name: smallpcprice
   type: number
   description: ''
   default: 0
