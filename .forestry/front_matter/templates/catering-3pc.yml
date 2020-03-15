@@ -26,7 +26,7 @@ fields:
     max: 
     step: 
   label: 50Pc Price
-- name: 80pcprice
+- name: medpcprice
   type: number
   description: ''
   default: 0
@@ -36,7 +36,7 @@ fields:
     max: 
     step: 
   label: 80Pc Price
-- name: 100pcprice
+- name: lgpcprice
   type: number
   label: 100Pc Price
   description: ''
