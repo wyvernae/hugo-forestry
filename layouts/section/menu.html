@@ -18,11 +18,11 @@
         <h2 class="subHeading">All served with Mashed Potatoes with gravy French Fries, Cole Slaw & a
           roll.</h1>
           <div class="foodContent">
-            {{ range where .Site.RegularPages "Section" "dinner"}}
-            {{ partial "fooditem.html" .Params }}
-            {{ end }}
             {{ range where .Site.RegularPages "Section" "dinnersmlg"}}
             {{ partial "fooditem2price.html" .Params }}
+            {{ end }}
+            {{ range where .Site.RegularPages "Section" "dinner"}}
+            {{ partial "fooditem.html" .Params }}
             {{ end }}
           </div>
           <h2 class="menHeading">From the Grill</h2>
@@ -41,6 +41,19 @@
         {{end}}
       </li>
       <li>
+        <h1 class="menHeading">Chick Stix®</h1>
+        <h2 class="subHeading">Plain or Buffalo</h2>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "chick stix"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
+        <h1 class="menHeading">Bone-in-Buckets</h1>
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "bone-in-bucket"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
         <h1 class="menHeading">Fresh Wings</h1>
         <h2 class="subHeading">Flavors: Plain | Buffalo | BBQ | Teriyaki | Sweet Heat | Garlic Parmesan | Lemon
           Pepper | Ranch Alita | Honey Mustard </h2>
@@ -52,19 +65,6 @@
         <h1 class="menHeading">Family Meals</h1>
         <div class="foodContent">
           {{ range where .Site.RegularPages "Section" "Family Meals"}}
-          {{ partial "fooditem.html" .Params }}
-          {{end}}
-        </div>
-        <h1 class="menHeading">Chick Stix®</h1>
-        <h2 class="subHeading">Plain or Buffalo</h2>
-        <div class="foodContent">
-          {{ range where .Site.RegularPages "Section" "chick stix"}}
-          {{ partial "fooditem.html" .Params }}
-          {{end}}
-        </div>
-        <h1 class="menHeading">Bone-in-Buckets</h1>
-        <div class="foodContent">
-          {{ range where .Site.RegularPages "Section" "bone-in-bucket"}}
           {{ partial "fooditem.html" .Params }}
           {{end}}
         </div>
