@@ -18,5 +18,6 @@ fields:
     max: 
     step: 
 pages:
+- content/dessert/Double Chocolate Cake.md
 - content/dessert/NY Style Cheesecake.md
 - content/dessert/Whoopie.md
