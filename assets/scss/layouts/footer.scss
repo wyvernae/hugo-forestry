@@ -1,13 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
 .footer {
-  height: 100px;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: white;
-  background: linear-gradient(90deg, #707070 0%, #474747 100%);
+  background: rgb(78, 78, 78);
+  flex-direction: row;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
+  .nav {
+    .bottomNav {
+      padding: 0;
+      margin: 0;
+    }
 
-  a {
-    color: white;
+    h1 {
+      font-size: 2em;
+      font-family: 'Lobster', cursive;
+      color: white;
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 0;
+
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      margin-top: .5em;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      font-weight: bolder;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2,
+    p {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Lobster',
+        cursive;
+    }
+
+    h2 {
+
+      font-size: 1.3em;
+    }
   }
 }
