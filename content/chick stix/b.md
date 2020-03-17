@@ -1,5 +1,5 @@
 +++
 name = "10 Pieces"
-price = 9.99
+price = 10.99
 
 +++
