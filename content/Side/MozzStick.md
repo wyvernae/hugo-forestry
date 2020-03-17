@@ -1,5 +1,5 @@
 +++
 name = "Mozzarella Sticks (8)"
-price = 7.49
+price = 7.99
 
 +++
