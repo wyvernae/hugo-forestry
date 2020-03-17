@@ -36,9 +36,11 @@
         <h1 class="menHeading">Salads</h1>
         <h2 class="subHeading">Available Dressings: Italian, Lite Italian, Blue Cheese, Ranch, Thousand Island, Caesar,
           Greek, Honey Mustard. Add Feta to any Salad for 99¢</h2>
-        {{ range where .Site.RegularPages "Section" "salad"}}
-        {{ partial "fooditem.html" .Params }}
-        {{end}}
+        <div class="foodContent">
+          {{ range where .Site.RegularPages "Section" "salad"}}
+          {{ partial "fooditem.html" .Params }}
+          {{end}}
+        </div>
       </li>
       <li>
         <h1 class="menHeading">Chick Stix®</h1>

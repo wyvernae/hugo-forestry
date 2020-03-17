@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 .products {
   // max-width: 1000px;
   margin-left: auto;
@@ -23,6 +25,30 @@
   }
 }
 
+.orderHeading {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  width: 100%;
+  margin-top: 5em;
+  background-color: #D5572D;
+
+  h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+
+    &:nth-child(1) {
+      font-family: 'Lobster', cursive;
+
+    }
+  }
+
+}
+
 .mycard,
 .mycard2 {
   margin-left: 5em;
@@ -31,6 +57,11 @@
   @media (max-width:960px) {
     margin-left: 1em;
     margin-right: 1em;
+  }
+
+  @media (min-width:1566px) {
+    margin-left: 20em;
+    margin-right: 20em;
   }
 
   @media (max-width:834px) {
