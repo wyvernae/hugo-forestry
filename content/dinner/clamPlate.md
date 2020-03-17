@@ -1,6 +1,6 @@
 +++
 description = ""
 name = "Clam Plate"
-price = 15.99
+price = 18.99
 
 +++
