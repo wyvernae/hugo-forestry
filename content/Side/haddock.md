@@ -1,5 +1,5 @@
 +++
 name = "Haddock"
-price = 8.59
+price = 9.99
 
 +++
