@@ -27,6 +27,7 @@ fields:
     max: 
     step: 
 pages:
+- content/dinner/Fish & Chips.md
 - content/dinner/ShrimpPlate.md
 - content/dinner/clamPlate.md
 - content/dinner/fishermanplatter.md
